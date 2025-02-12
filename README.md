@@ -19,7 +19,6 @@ AQUÍ GRÁFICA 2
 ### Código en Python 
 1. Se definen las señales y sistemas que se van a utilizar. Posteriormente se realiza la convolución discreta entre las señales con sus respectivos sistemas haciendo uso de la función np.convolve obteniendo así una tercera señal y las gráficas que se ven a continuación.
    
-
 ```python
 # Señales discretas y sistemas proporcionados
 SD1 = np.array([1, 0, 3, 4, 7, 7, 7, 8, 5])  # Señal discreta 1
@@ -59,6 +58,20 @@ plt.legend()
 plt.tight_layout()
 plt.show()
 ```
+2.  Se definen los valores del tiempo de muestreo y el rango para que así las señales estén correctamente muestreadas y representadas. Además, se realiza la correlación de las mismas con ayuda de la función np.correlate, lo cual permite observar la similitud que hay entre ambas señales.
+```python
+# Definir Ts y el rango de n
+Ts = 1.25e-3  # Tiempo de muestreo en segundos
+n = np.arange(0, 9)  # Rango de n
+
+# Definir las señales x1[n] y x2[n]
+x1 = np.cos(2 * np.pi * 100 * n * Ts)  # Señal coseno
+x2 = np.sin(2 * np.pi * 100 * n * Ts)  # Señal seno
+
+# Correlación entre x1 y x2
+correlacion = np.correlate(x1, x2, mode='full')
+```
+3. 
 ## Representación secuencial
 
 ### Señal EMG 
@@ -83,6 +96,8 @@ Al aplicar la transformada de Fourier de la señal y graficar su transformada y 
   <img src="https://github.com/user-attachments/assets/ab9286bb-75a5-4ee6-a39b-ed1df082806f" width="400" height="400">
   <img src="https://github.com/user-attachments/assets/cbdccfa2-7906-4d2a-b44e-f1e586a3d2b3" width="400" height="400">
 </div>
+
+A partir de la señal obtenida y de su representación en gráficos se observa que es una señal no determinística dado que no sigue un patrón matemático, lo que quiere decir que son variantes y dependientes de factores cambiantes. Así mismo estocástica por el hecho de que tiene un componente aleatorio lo que quiere decir que su comportamiento varía en el tiempo de manera impredecible
 
 ## Instrucciones 
 ## Señales EMG
