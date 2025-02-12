@@ -38,6 +38,40 @@ Al aplicar la transformada de Fourier de la señal y graficar su transformada y 
 AQUÍ FOTO
 
 
+## Instrucciones 
+## Señales EMG
+Nota: A continuación se presentaron únicamente los cambios nuevos realizados sobre el código ya mencionado.
+
+1. Para realizar la transformada de Fourier se utilizó scipy.fft.fft para calcularla la transformada rápida de Fourier dada su mayor facilidad, posteriormente se cálculo el espectro de la misma (magnitud) y se graficó para ver cómo se distribuyen las frecuencias de la señal, finalmente se calcula la densidad espectral de potencia (PSD), que muestra la distribuición de la potencia de la señal a lo largo de las frecuencias.
+   
+   ```python
+# Realizar la Transformada Rápida de Fourier (FFT) de la señal EMG
+frecuencia = np.fft.fftfreq(len(emg), d=ts)  # Generar el vector de frecuencias
+fft_emg = np.fft.fft(emg)  # Calcular la FFT de la señal
+
+# Calcular la magnitud de la FFT
+magnitud_fft = np.abs(fft_emg)
+
+# Graficar el espectro de la señal
+plt.plot(frecuencia[:n//2], magnitud_fft[:n//2])  # parte positiva de la frecuencia
+plt.title('Espectro de la Señal EMG')
+plt.xlabel('Frecuencia (Hz)')
+plt.ylabel('Magnitud')
+plt.show()
+
+# Calcular la densidad espectral de potencia (PSD)
+from scipy.signal import welch
+frequencias_psd, psd_emg = welch(emg, fs, nperseg=1024)
+
+# Graficar la densidad espectral de potencia (PSD)
+plt.semilogy(frequencias_psd, psd_emg)
+plt.title('Densidad Espectral de Potencia de la Señal EMG')
+plt.xlabel('Frecuencia (Hz)')
+plt.ylabel('Densidad Espectral de Potencia (dB/Hz)')
+plt.show()
+´´´
+
+
 ## Requerimientos
 1. Python 3.12
 2. Librerias numpy, matplotlib, time
