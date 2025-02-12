@@ -84,7 +84,7 @@ x2 = np.sin(2 * np.pi * 100 * n * Ts)  # Señal seno
 correlacion = np.correlate(x1, x2, mode='full')
 ```
 <div align="center">
-<img src="https://i.postimg.cc/vTGKgdZw/Correlacion.png"width="400" height="400">
+<img src="https://i.postimg.cc/vTGKgdZw/Correlacion.png"width="700" height="400">
 </div>
 
 3. Por último se realiza la representación secuencial por medio de la creación de gráficos animados que muestran la evolución de las señales y sistemas punto a punto en el tiempo, como se puede observar en las siguientes gráficas:
