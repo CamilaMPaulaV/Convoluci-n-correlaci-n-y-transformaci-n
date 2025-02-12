@@ -66,7 +66,7 @@ plt.tight_layout()
 plt.show()
 ```
 <div align="center">
-<img src="https://i.postimg.cc/FKKwGvyr/Se-ales-y-sistemas.png-"width="400" height="400">
+<img src="https://i.postimg.cc/FKKwGvyr/Se-ales-y-sistemas.png"width="400" height="400">
 </div>
 2.  Se definen los valores del tiempo de muestreo y el rango para que así las señales estén correctamente muestreadas y representadas. Además, se realiza la correlación de las mismas con ayuda de la función np.correlate, lo cual permite observar la similitud que hay entre ambas señales.
 
