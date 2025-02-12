@@ -105,6 +105,8 @@ for i in range(len(n)):
     plt.pause(0.5)
 plt.show()
 ```
+$ git push origin REPRESENTACIÓN SECUENCIAL.png 
+
 ## Representación secuencial
 
 ### Señal EMG 
