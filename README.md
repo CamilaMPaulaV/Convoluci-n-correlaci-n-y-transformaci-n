@@ -12,14 +12,14 @@ El primer sistema que se determinó fue 1034777850 junto con la primera señal d
 </div>
 Una vez obtenido lo anterior se realizaron las gráficas correspondientes a la señal, el sistema y su convolución:
 <div align="center">
-<img src="https://i.postimg.cc/fL2k3MM6/P3.png"width="400" height="400">
+<img src="https://i.postimg.cc/fL2k3MM6/P3.png"width="600" height="400">
 <img src="https://i.postimg.cc/R0bNhMS2/P4.png"width="400" height="400">
 </div>
 Posteriormente se realizó el mismo proceso con el segundo sistema y segunda señal, obteniendo lo siguiente
 <div align="center">
 <img src="https://i.postimg.cc/rFtCLPJ8/C1.png"width="400" height="400">
-<img src="https://i.postimg.cc/nc7R1zNY/C2.png"width="400" height="400">
-<img src="https://i.postimg.cc/ZYr5rtnr/C3.png"width="400" height="400">
+<img src="https://i.postimg.cc/nc7R1zNY/C2.png"width="700" height="400">
+<img src="https://i.postimg.cc/ZYr5rtnr/C3.png"width="600" height="400">
 <img src="https://i.postimg.cc/rmkFKK6n/C4.png"width="400" height="400">
 </div>
 
