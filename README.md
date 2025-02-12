@@ -17,6 +17,48 @@ AQUÍ GRÁFICA 2
 
 
 ### Código en Python 
+1. Se definen las señales y sistemas que se van a utilizar. Posteriormente se realiza la convolución discreta entre las señales con sus respectivos sistemas haciendo uso de la función np.convolve obteniendo así una tercera señal y las gráficas que vemos a continuación.
+2. 
+```python
+# Señales discretas y sistemas proporcionados
+SD1 = np.array([1, 0, 3, 4, 7, 7, 7, 8, 5])  # Señal discreta 1
+sistema1 = np.array([5, 6, 0, 0, 7, 0, 7, 6, 7])  # Sistema 1
+
+SD2 = np.array([1, 0, 3, 4, 7, 7, 7, 8, 5])  # Señal discreta 2
+sistema2 = np.array([5, 6, 0, 0, 7, 0, 7, 6, 7])  # Sistema 2
+
+# Convolución entre las señales y sistemas proporcionados
+y1 = np.convolve(SD1, sistema1, mode='full')
+y2 = np.convolve(SD2, sistema2, mode='full')
+
+# Gráficos de señales y sistemas con su convolución
+plt.figure(figsize=(12, 8))
+plt.subplot(3, 2, 1)
+plt.stem(n, SD1, label="Señal 1", linefmt='b', markerfmt='bo', basefmt=" ")
+plt.stem(n, sistema1, label="Sistema 1", linefmt='g', markerfmt='go', basefmt=" ")
+plt.title("Señal 1 y Sistema 1")
+plt.legend()
+
+plt.subplot(3, 2, 2)
+plt.stem(n, SD2, label="Señal 2", linefmt='r', markerfmt='ro', basefmt=" ")
+plt.stem(n, sistema2, label="Sistema 2", linefmt='m', markerfmt='mo', basefmt=" ")
+plt.title("Señal 2 y Sistema 2")
+plt.legend()
+
+plt.subplot(3, 2, 3)
+plt.stem(np.arange(len(y1)), y1, label="Convolución Señal 1", linefmt='c', markerfmt='co', basefmt=" ")
+plt.title("Convolución Señal 1 y Sistema 1")
+plt.legend()
+
+plt.subplot(3, 2, 4)
+plt.stem(np.arange(len(y2)), y2, label="Convolución Señal 2", linefmt='y', markerfmt='yo', basefmt=" ")
+plt.title("Convolución Señal 2 y Sistema 2")
+plt.legend()
+
+plt.tight_layout()
+plt.show()
+```
+## Representación secuencial
 
 ### Señal EMG 
 A partir de la señal EMG, se obtuvo la sieguiente gráfica
@@ -43,8 +85,7 @@ AQUÍ FOTO
 Nota: A continuación se presentaron únicamente los cambios nuevos realizados sobre el código ya mencionado.
 
 1. Para realizar la transformada de Fourier se utilizó scipy.fft.fft para calcularla la transformada rápida de Fourier dada su mayor facilidad, posteriormente se cálculo el espectro de la misma (magnitud) y se graficó para ver cómo se distribuyen las frecuencias de la señal, finalmente se calcula la densidad espectral de potencia (PSD), que muestra la distribuición de la potencia de la señal a lo largo de las frecuencias.
-   
-   ```python
+```python
 # Realizar la Transformada Rápida de Fourier (FFT) de la señal EMG
 frecuencia = np.fft.fftfreq(len(emg), d=ts)  # Generar el vector de frecuencias
 fft_emg = np.fft.fft(emg)  # Calcular la FFT de la señal
@@ -69,8 +110,7 @@ plt.title('Densidad Espectral de Potencia de la Señal EMG')
 plt.xlabel('Frecuencia (Hz)')
 plt.ylabel('Densidad Espectral de Potencia (dB/Hz)')
 plt.show()
-´´´
-
+```
 
 ## Requerimientos
 1. Python 3.12
