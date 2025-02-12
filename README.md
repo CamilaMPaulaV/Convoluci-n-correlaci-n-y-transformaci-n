@@ -68,9 +68,7 @@ A partir de la señal EMG, se obtuvo la sieguiente gráfica
 </div>
 
 Posteriormente se realizan los cálculos pertinentes para hallar su media, desviación estandandar y coeficiente de variación, los valores obtenidos son los siguientes:
-Coeficiente de variación: 101842.59095057225
-SNR con Ruido Gaussiano Alta Frecuencia: 3.02 dB
-SNR con Ruido Gaussiano Baja Frecuencia: 2.99 dB
+
 
 Una vez obtenidos los datos anteriores se ontuvo su histograma y su función de probabilidad de manera manual y automática obteniendo lo siguiente:
 <div align="center">
@@ -81,8 +79,10 @@ Una vez obtenidos los datos anteriores se ontuvo su histograma y su función de 
 </div>
 
 Al aplicar la transformada de Fourier de la señal y graficar su transformada y su densidad espectral, se btuvo lo siguiente:
-AQUÍ FOTO
-
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/ab9286bb-75a5-4ee6-a39b-ed1df082806f" width="400" height="400">
+  <img src="https://github.com/user-attachments/assets/cbdccfa2-7906-4d2a-b44e-f1e586a3d2b3" width="400" height="400">
+</div>
 
 ## Instrucciones 
 ## Señales EMG
@@ -120,4 +120,9 @@ plt.show()
 1. Python 3.12
 2. Librerias numpy, matplotlib, time
 3. Señal electromigráfica en formato mat
-
+   
+## Referencias
+1. Dominio de la Frecuencia | PySDR: A Guide to SDR and DSP using Python. (s. f.). https://pysdr.org/es/content-es/frequency_domain.html
+2. Transformada rápida de Fourier (I). (s. f.). http://www.sc.ehu.es/sbweb/fisica3/datos/fourier/fourier_1.html#:~:text=La%20transformada%20r%C3%A1pida%20de%20Fourier,%2C%201024%2C%204096%2C%20etc.
+3. PhysioBank ATM. (s. f.). https://archive.physionet.org/cgi-bin/atm/ATM
+4. Dominio de la Frecuencia | PySDR: A Guide to SDR and DSP using Python. (s. f.). https://pysdr.org/es/content-es/frequency_domain.html
