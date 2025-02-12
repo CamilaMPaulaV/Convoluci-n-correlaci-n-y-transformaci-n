@@ -5,4 +5,26 @@ Por otra parte, a partir del código que puede encontrar en el repositorio "Stat
 
 ## Resultados
 ### Parte manual 
-El primer sistema que se determinó fue 1034777850 junto con la primera señal discreta 5600765, con lo anterior se realizó la equivalencia de cada número en potencias 
+El primer sistema que se determinó fue 1034777850 junto con la primera señal discreta 5600765, con lo anterior se realizó la convolución de manera matricial, para oprimizar el proceso, se obtuvo el siguiente resultado
+AQUÍ FOTO 1
+
+Una vez obtenido lo anterior se realizaron las gráficas correspondientes a la señal, el sistema y su convolución:
+GRÁFICAS 1
+
+Posteriormente se realizó el mimso proceso con el segundo sistema y segunda señal, obteniendo lo siguiente
+AQUÍ FOTO 2
+AQUÍ GRÁFICA 2
+
+
+### Código en Python
+
+
+
+
+
+
+## Requerimientos
+1. Python 3.12
+2. Librerias numpy, matplotlib, time
+3. Señal electromigráfica en formato mat
+
