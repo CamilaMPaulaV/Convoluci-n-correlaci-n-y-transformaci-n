@@ -19,7 +19,7 @@ Posteriormente se realiz√≥ el mismo proceso con el segundo sistema y segunda se√
 <div align="center">
 <img src="https://i.postimg.cc/rFtCLPJ8/C1.png"width="400" height="400">
 <img src="https://i.postimg.cc/nc7R1zNY/C2.png"width="700" height="400">
-<img src="https://i.postimg.cc/ZYr5rtnr/C3.png"width="600" height="400">
+<img src="https://i.postimg.cc/DySNWhrL/C3.png"width="600" height="400">
 <img src="https://i.postimg.cc/rmkFKK6n/C4.png"width="400" height="400">
 </div>
 
