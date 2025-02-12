@@ -17,8 +17,9 @@ AQUÍ GRÁFICA 2
 
 
 ### Código en Python 
-1. Se definen las señales y sistemas que se van a utilizar. Posteriormente se realiza la convolución discreta entre las señales con sus respectivos sistemas haciendo uso de la función np.convolve obteniendo así una tercera señal y las gráficas que vemos a continuación.
-2. 
+1. Se definen las señales y sistemas que se van a utilizar. Posteriormente se realiza la convolución discreta entre las señales con sus respectivos sistemas haciendo uso de la función np.convolve obteniendo así una tercera señal y las gráficas que se ven a continuación.
+   
+
 ```python
 # Señales discretas y sistemas proporcionados
 SD1 = np.array([1, 0, 3, 4, 7, 7, 7, 8, 5])  # Señal discreta 1
@@ -62,7 +63,9 @@ plt.show()
 
 ### Señal EMG 
 A partir de la señal EMG, se obtuvo la sieguiente gráfica
-AQUÍ SEÑAL EMG
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/867b23ff-0963-4645-b1b3-7c63aea2e882" width="400" height="400">
+</div>
 
 Posteriormente se realizan los cálculos pertinentes para hallar su media, desviación estandandar y coeficiente de variación, los valores obtenidos son los siguientes:
 Coeficiente de variación: 101842.59095057225
@@ -70,11 +73,12 @@ SNR con Ruido Gaussiano Alta Frecuencia: 3.02 dB
 SNR con Ruido Gaussiano Baja Frecuencia: 2.99 dB
 
 Una vez obtenidos los datos anteriores se ontuvo su histograma y su función de probabilidad de manera manual y automática obteniendo lo siguiente:
-AQUÍ GRÁFICAS
-
-Al contaminar la señal con ruido Gaussiano, impulos y artefacto, se obutvo lo siguiente:
-AQUÍ GRÁFICA
-
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/acd5e1d1-1acd-4852-abf7-348b8bdf8341" width="400" height="400">
+  <img src="https://github.com/user-attachments/assets/9f92d611-f059-4cdd-86e5-748d3e09f632" width="400" height="400">
+  <img src="https://github.com/user-attachments/assets/620ace93-208a-4176-a3f6-7858f78322ab" width="400" height="400">
+  <img src="https://github.com/user-attachments/assets/26916ee6-aa85-4a9c-8727-80c8d0019fbd" width="400" height="400">
+</div>
 
 Al aplicar la transformada de Fourier de la señal y graficar su transformada y su densidad espectral, se btuvo lo siguiente:
 AQUÍ FOTO
