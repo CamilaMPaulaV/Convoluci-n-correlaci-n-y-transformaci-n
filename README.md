@@ -8,14 +8,20 @@ Por otra parte, a partir del código que puede encontrar en el repositorio "Stat
 El primer sistema que se determinó fue 1034777850 junto con la primera señal discreta 5600765, con lo anterior se realizó la convolución de manera matricial, para oprimizar el proceso, se obtuvo el siguiente resultado
 <div align="center">
 <img src="https://i.postimg.cc/28kn53TH/P1.png"width="400" height="400">
+<img src="https://i.postimg.cc/jqPGdZvh/P2.png"width="400" height="400">
 </div>
 Una vez obtenido lo anterior se realizaron las gráficas correspondientes a la señal, el sistema y su convolución:
-GRÁFICAS 1
-
-Posteriormente se realizó el mimso proceso con el segundo sistema y segunda señal, obteniendo lo siguiente
-AQUÍ FOTO 2
-AQUÍ GRÁFICA 2
-
+<div align="center">
+<img src="https://i.postimg.cc/fL2k3MM6/P3.png"width="400" height="400">
+<img src="https://i.postimg.cc/R0bNhMS2/P4.png"width="400" height="400">
+</div>
+Posteriormente se realizó el mismo proceso con el segundo sistema y segunda señal, obteniendo lo siguiente
+<div align="center">
+<img src="https://i.postimg.cc/rFtCLPJ8/C1.png"width="400" height="400">
+<img src="https://i.postimg.cc/nc7R1zNY/C2.png"width="400" height="400">
+<img src="https://i.postimg.cc/ZYr5rtnr/C3.png"width="400" height="400">
+<img src="https://i.postimg.cc/rmkFKK6n/C4.png"width="400" height="400">
+</div>
 
 ### Código en Python 
 1. Se definen las señales y sistemas que se van a utilizar. Posteriormente se realiza la convolución discreta entre las señales con sus respectivos sistemas haciendo uso de la función np.convolve obteniendo así una tercera señal y las gráficas que se ven a continuación.
@@ -59,8 +65,13 @@ plt.legend()
 plt.tight_layout()
 plt.show()
 ```
+<div align="center">
+<img src="https://i.postimg.cc/FKKwGvyr/Se-ales-y-sistemas.png-"width="400" height="400">
+</div>
 2.  Se definen los valores del tiempo de muestreo y el rango para que así las señales estén correctamente muestreadas y representadas. Además, se realiza la correlación de las mismas con ayuda de la función np.correlate, lo cual permite observar la similitud que hay entre ambas señales.
+
 ```python
+
 # Definir Ts y el rango de n
 Ts = 1.25e-3  # Tiempo de muestreo en segundos
 n = np.arange(0, 9)  # Rango de n
@@ -72,6 +83,10 @@ x2 = np.sin(2 * np.pi * 100 * n * Ts)  # Señal seno
 # Correlación entre x1 y x2
 correlacion = np.correlate(x1, x2, mode='full')
 ```
+<div align="center">
+<img src="https://i.postimg.cc/vTGKgdZw/Correlacion.png"width="400" height="400">
+</div>
+
 3. Por último se realiza la representación secuencial por medio de la creación de gráficos animados que muestran la evolución de las señales y sistemas punto a punto en el tiempo, como se puede observar en las siguientes gráficas:
 ```python
 # Representación secuencial de x1 y x2
@@ -106,7 +121,10 @@ for i in range(len(n)):
     plt.pause(0.5)
 plt.show()
 ```
-$ git push origin REPRESENTACIÓN SECUENCIAL.png 
+<div align="center">
+<img src="https://i.postimg.cc/y6Sh9GSw/REPRESENTACI-N-SECUENCIAL.png"width="400" height="400">
+<img src="https://i.postimg.cc/zGR118Lx/fin-fin.png"width="400" height="400">
+</div>
 
 ## Representación secuencial
 
