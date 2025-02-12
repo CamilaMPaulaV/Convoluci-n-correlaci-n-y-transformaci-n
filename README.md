@@ -189,7 +189,11 @@ plt.show()
 1. Python 3.12
 2. Librerias numpy, matplotlib, time
 3. Señal electromigráfica en formato mat
-   
+
+## Cita
+Convolución, correlación y transformación by Camila Martínez Y Paula Vega
+published 11/02/25
+
 ## Referencias
 1. Dominio de la Frecuencia | PySDR: A Guide to SDR and DSP using Python. (s. f.). https://pysdr.org/es/content-es/frequency_domain.html
 2. Transformada rápida de Fourier (I). (s. f.). http://www.sc.ehu.es/sbweb/fisica3/datos/fourier/fourier_1.html#:~:text=La%20transformada%20r%C3%A1pida%20de%20Fourier,%2C%201024%2C%204096%2C%20etc.
