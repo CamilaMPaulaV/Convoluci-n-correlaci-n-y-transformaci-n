@@ -20,7 +20,7 @@ Posteriormente se realizó el mismo proceso con el segundo sistema y segunda se�
 <img src="https://i.postimg.cc/rFtCLPJ8/C1.png"width="400" height="400">
 <img src="https://i.postimg.cc/nc7R1zNY/C2.png"width="700" height="400">
 <img src="https://github.com/user-attachments/assets/d69cff42-7993-4f5d-a8fd-cda7f29ee9a5"width="600" height="400">
-<img src="https://i.postimg.cc/rmkFKK6n/C4.png"width="400" height="400">
+<img src="https://github.com/user-attachments/assets/3ca5e2a8-d025-4052-a284-b24be00a8fb1"width="400" height="400">
 </div>
 
 ### Código en Python 
