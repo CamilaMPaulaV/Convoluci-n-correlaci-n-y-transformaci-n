@@ -71,7 +71,40 @@ x2 = np.sin(2 * np.pi * 100 * n * Ts)  # Señal seno
 # Correlación entre x1 y x2
 correlacion = np.correlate(x1, x2, mode='full')
 ```
-3. 
+3. Por último se realiza la representación secuencial por medio de la creación de gráficos animados que muestran la evolución de las señales y sistemas punto a punto en el tiempo, como se puede observar en las siguientes gráficas:
+```python
+# Representación secuencial de x1 y x2
+plt.figure(figsize=(8, 6))
+for i in range(len(n)):
+    plt.clf()
+    plt.subplot(2, 1, 1)
+    plt.stem(n[:i+1], x1[:i+1], linefmt='b', markerfmt='bo', basefmt=" ")
+    plt.title("Evolución de x1[n]")
+    
+    plt.subplot(2, 1, 2)
+    plt.stem(n[:i+1], x2[:i+1], linefmt='r', markerfmt='rs', basefmt=" ")
+    plt.title("Evolución de x2[n]")
+    
+    plt.tight_layout()
+    plt.pause(0.5)
+plt.show()
+
+# Representación secuencial de los sistemas
+plt.figure(figsize=(8, 6))
+for i in range(len(n)):
+    plt.clf()
+    plt.subplot(2, 1, 1)
+    plt.stem(n[:i+1], sistema1[:i+1], linefmt='g', markerfmt='go', basefmt=" ")
+    plt.title("Evolución del Sistema 1")
+    
+    plt.subplot(2, 1, 2)
+    plt.stem(n[:i+1], sistema2[:i+1], linefmt='m', markerfmt='mo', basefmt=" ")
+    plt.title("Evolución del Sistema 2")
+    
+    plt.tight_layout()
+    plt.pause(0.5)
+plt.show()
+```
 ## Representación secuencial
 
 ### Señal EMG 
