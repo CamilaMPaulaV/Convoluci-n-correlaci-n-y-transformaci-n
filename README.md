@@ -7,7 +7,7 @@ Por otra parte, a partir del código que puede encontrar en el repositorio "Stat
 ### Parte manual 
 El primer sistema que se determinó fue 1034777850 junto con la primera señal discreta 5600765, con lo anterior se realizó la convolución de manera matricial, para oprimizar el proceso, se obtuvo el siguiente resultado
 <div align="center">
-<[![P1.png](https://i.postimg.cc/28kn53TH/P1.png)](https://postimg.cc/bd5ZCy7b)width="400" height="400">
+[![P1.png](https://i.postimg.cc/28kn53TH/P1.png)](https://postimg.cc/bd5ZCy7b)
 </div>
 Una vez obtenido lo anterior se realizaron las gráficas correspondientes a la señal, el sistema y su convolución:
 GRÁFICAS 1
